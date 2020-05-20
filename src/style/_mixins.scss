@@ -1,9 +1,9 @@
-@mixin Padding_And_Margin($padding:null, $margin:null) {
+@mixin padding_And_Margin($padding:null, $margin:null) {
     padding   : $padding;
     margin    : $margin;
   }
   
-@mixin fullSize($height:$FULL, $width:$FULL) {
+@mixin fullSize($height:$full, $width:$full) {
     height : $height;
     width  : $width;
   }

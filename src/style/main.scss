@@ -1,8 +1,172 @@
 @import 'origin';
 
 
-h1{
-    font-size: 100px;
+.section{
+    background-color        : $background_Light_One;
+    min-height              : 100vh;
+    display                 : block;
+    padding                 : 0 30px;
+}
+
+.main-content{
+    padding-left            : 270px;
+}
+
+.container{
+    margin                  : auto;
+    max-width               : 1100px;
+    width                   : 100%;
+}
+
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,0.25);
+}
+
+/* Aside */
+.aside{
+    width                   : 270px;
+    background-color        : $background_Light_Two;
+    position                : fixed;
+    height                  : $full;
+    left                    : 0;
+    top                     : 0;
+    z-index                 : 10;
+    padding                 : 30px; 
+    border-right            : 1px solid $border_Light_Two;
+    .logo{
+        padding             : 30px 0;
+        a{
+            font-size       : toRem( 22px );
+            color           : $heading_Light;
+            font-family     : $font_Two;
+            font-weight     : 700;
+            display         : inline-block;
+            position        : relative;
+            padding         : 0 10px;
+            line-height     : 35px;
+            &:before{
+                content     : '';
+                height      : 20px;
+                width       : 20px;
+                position    : absolute;  
+                top         : 0;
+                left        : 0;
+            }
+            &:after{
+                content     : '';
+                height      : 20px;
+                width       : 20px;
+                position    : absolute;  
+                bottom      : 0;
+                right       : 0;
+            }
+        }
+    }
+    .nav-toggler{
+        height               : 40px;
+        width                : 45px;
+        border               : 1px solid $border_Light_One;
+        cursor               : pointer;
+        position             : fixed;
+        left                 : 300px;
+        top                  : 30px;  
+        z-index              : 9999;
+        border-radius        : 5px;
+        background-color     : $background_Light_Two;
+        // @include              flex(row, center, center);
+        display              : none;
+        span,
+        span::before,
+        span:after{
+            height           : 2px;
+            width            : 18px;
+        }
+        span{
+            position         : relative;
+            &:before, &:after{
+                content      : '';
+                position     : absolute;
+            }
+            &:before{
+                top          : -6px;
+                left         : 0;
+            }
+            &:after{
+                top          : 6px;
+                left         : 0;
+            }
+        }
+    }
+    .nav{
+        margin               : 80px 0;
+        padding              : 0;
+        li{
+            border-bottom    : 1px solid $border_Light_Two;
+            a{
+                font-size    : toRem( 16px );
+                font-weight  : 600;
+                color        : $heading_Light;
+                line-height  : 45px;
+                display      : block;
+                text-transform: capitalize;
+                -webkit-transition: all 0.3s ease;
+                transition   : all 0.3s ease;
+                &:not(.active):hover{
+                    padding-left: 5px;
+                }
+                .svg-inline--fa{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .copyright-text{
+        font-size            : toRem( 13px );
+        color                : #7d7d7d;
+    }
+
+}
+
+.home{
+    min-height              : 100vh;
+    @include flex;
+    .intro{
+        text-align          : center;
+        img{
+            border-radius   : 50%;
+            display         : inline-block;
+            border          : 3px solid #ffffff;
+        }
+        h1{
+            font-size       : toRem( 30px );
+            font-family     : $font_Two;
+            margin          : 20px 0 5px;
+            color           : $heading_Light;
+        }
+        p{
+            font-size       : toRem( 16px ); 
+            color           : $text_Light;
+            line-height     : 22px;
+            font-weight     : 500;
+        }
+        .social-links{
+            margin-top      : 25px;
+            a{
+                height      : 35px;
+                width       : 35px;
+                display     : inline-block;
+                text-align  : center;
+                line-height : 35px;
+                margin      : 0 4px;
+                color       : #ffffff;
+                border-radius: 50%;
+                transition  : all 0.3s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
 }
 
 

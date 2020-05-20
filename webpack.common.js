@@ -10,7 +10,7 @@ module.exports = {
             use: ["html-loader"] //Transform a src attribute into a require() call
           },
           {
-            test: /\.(png|jpg|jpeg|svg|gif)$/, //Look for files ending with these extensions
+            test: /\.(png|jpg|jpeg|gif)$/, //Look for files ending with these extensions
             use: {
               loader: "file-loader",
               /*Resolve import/require() on the above mentioned files into a url and produce the file into the output directory
@@ -19,6 +19,18 @@ module.exports = {
                 name: "[name].[hash].[ext]", //When creating image, keep same name, include a hash and keep same extention
                 outputPath: "img", //Create an img folder and place images in here
                 esModule: false //This is important to set, otherwise images will not load properly
+              }
+            }
+          },
+          {
+            // find these extensions in our css, copy the files to the outputPath,
+            // and rewrite the url() in our css to point them to the new (copied) location
+            test: /\.(woff(2)?|eot|otf|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            use: {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'fonts/'
               }
             }
           },

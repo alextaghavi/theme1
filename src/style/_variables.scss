@@ -1,17 +1,30 @@
-$FULL               : 100%;
-$HALF               : 50%;
-$QUARTER            : 25%;
+$full               : 100%;
+$half               : 50%;
+$quarter            : 25%;
 
-$MARGIN_AUTO        : 0 auto;
+$margin_Auto        : 0 auto;
 
-$BLUE               : #0041ffc9;
-$BLACK              : #1c1d25;
-$FONT_COLOR         : #5d5d5d;
-$FONT_SIZE          : toRem( 16px );
-$FONT_FAMILY_ONE    : 'Poppins', sans-serif;
-$FONT_FAMILY_TWO    : 'Major Mono Display', monospace;
-$FONT_LIGHT         : 200;
-$FONT_NORMAL        : 500;
-$FONT_BOLD          : 700;
+$font_One           : 'Poppins', sans-serif;
+$font_Two           : 'Rubik', sans-serif;
 
-$ACTIVE             : invert(95%) sepia(100%) saturate(5900%) hue-rotate(190deg) contrast(125%) brightness(80%);
+// Body-Light
+$background_Light_One   : #f2f2fc;
+$background_Light_Two   : #fdf9ff;
+$heading_Light          : #302e4d;
+$text_Light             : #504e70;
+$border_Light_One       : #d4d4e3;
+$border_Light_Two       : #e8dfec;
+
+// Body-Dark
+$background_Dark_One    : #151515;
+$background_Dark_Two    : #222222;
+$heading_Dark           : #ffffff;
+$text_Dark              : #e9e9e9;
+$border_Dark            : #393939;
+
+// Style Skins
+$pink                   : #ec1839;
+$blue                   : #2196f3;
+$orange                 : #fa5b0f;
+$yellow                 : #ffb400;
+$green                  : #72b626;
