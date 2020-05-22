@@ -1,173 +1,320 @@
 @import 'origin';
 
 
-.section{
-    background-color        : $background_Light_One;
-    min-height              : 100vh;
-    display                 : block;
-    padding                 : 0 30px;
-}
 
-.main-content{
-    padding-left            : 270px;
-}
-
-.container{
-    margin                  : auto;
-    max-width               : 1100px;
-    width                   : 100%;
-}
-
-.shadow-dark{
-    box-shadow: 0 0 20px rgba(48,46,77,0.25);
-}
 
 /* Aside */
 .aside{
-    width                   : 270px;
-    background-color        : $background_Light_Two;
-    position                : fixed;
-    height                  : $full;
-    left                    : 0;
-    top                     : 0;
-    z-index                 : 10;
-    padding                 : 30px; 
-    border-right            : 1px solid $border_Light_Two;
+    width                           : 270px;
+    background-color                : $background_Light_Two;
+    position                        : fixed;
+    height                          : $full;
+    left                            : 0;
+    top                             : 0;
+    z-index                         : 10;
+    padding                         : 30px; 
+    border-right                    : 1px solid $border_Light_Two;
     .logo{
-        padding             : 30px 0;
+        padding                     : 30px 0;
         a{
-            font-size       : toRem( 22px );
-            color           : $heading_Light;
-            font-family     : $font_Two;
-            font-weight     : 700;
-            display         : inline-block;
-            position        : relative;
-            padding         : 0 10px;
-            line-height     : 35px;
+            font-size               : toRem( 22px );
+            color                   : $heading_Light;
+            font-family             : $font_Two;
+            display                 : inline-block;
+            position                : relative;
+            padding                 : 0 10px;
+            line-height             : 35px;
             &:before{
-                content     : '';
-                height      : 20px;
-                width       : 20px;
-                position    : absolute;  
-                top         : 0;
-                left        : 0;
+                content             : '';
+                height              : 20px;
+                width               : 20px;
+                position            : absolute;  
+                top                 : 0;
+                left                : 0;
             }
             &:after{
-                content     : '';
-                height      : 20px;
-                width       : 20px;
-                position    : absolute;  
-                bottom      : 0;
-                right       : 0;
+                content             : '';
+                height              : 20px;
+                width               : 20px;
+                position            : absolute;  
+                bottom              : 0;
+                right               : 0;
             }
         }
     }
     .nav-toggler{
-        height               : 40px;
-        width                : 45px;
-        border               : 1px solid $border_Light_One;
-        cursor               : pointer;
-        position             : fixed;
-        left                 : 300px;
-        top                  : 30px;  
-        z-index              : 9999;
-        border-radius        : 5px;
-        background-color     : $background_Light_Two;
-        // @include              flex(row, center, center);
-        display              : none;
+        height                      : 40px;
+        width                       : 45px;
+        border                      : 1px solid $border_Light_One;
+        cursor                      : pointer;
+        position                    : fixed;
+        left                        : 300px;
+        top                         : 30px;  
+        z-index                     : 9999;
+        border-radius               : 5px;
+        background-color            : $background_Light_Two;
+        display                     : none;
         span,
         span::before,
         span:after{
-            height           : 2px;
-            width            : 18px;
+            height                  : 2px;
+            width                   : 18px;
         }
         span{
-            position         : relative;
+            position                : relative;
             &:before, &:after{
-                content      : '';
-                position     : absolute;
+                content             : '';
+                position            : absolute;
             }
             &:before{
-                top          : -6px;
-                left         : 0;
+                top                 : -6px;
+                left                : 0;
             }
             &:after{
-                top          : 6px;
-                left         : 0;
+                top                 : 6px;
+                left                : 0;
             }
         }
     }
     .nav{
-        margin               : 80px 0;
-        padding              : 0;
+        margin                      : 80px 0;
+        padding                     : 0;
         li{
-            border-bottom    : 1px solid $border_Light_Two;
+            border-bottom           : 1px solid $border_Light_Two;
             a{
-                font-size    : toRem( 16px );
-                font-weight  : 600;
-                color        : $heading_Light;
-                line-height  : 45px;
-                display      : block;
-                text-transform: capitalize;
-                -webkit-transition: all 0.3s ease;
-                transition   : all 0.3s ease;
+                font-size           : toRem( 16px );
+                font-weight         : 500;
+                color               : $heading_Light;
+                line-height         : 45px;
+                display             : block;
+                text-transform      : capitalize;
+                -webkit-transition  : all 0.3s ease;
+                transition          : all 0.3s ease;
                 &:not(.active):hover{
-                    padding-left: 5px;
+                    padding-left    : 5px;
+                    margin          : 0;
                 }
-                .svg-inline--fa{
-                    margin-right: 5px;
+                svg{
+                    margin-right    : 10px;
                 }
             }
         }
     }
     .copyright-text{
-        font-size            : toRem( 13px );
-        color                : #7d7d7d;
+        font-size                   : toRem( 13px );
+        color                       : #7d7d7d;
     }
 
 }
-
+/* Home Section */
 .home{
-    min-height              : 100vh;
+    min-height                      : 100vh;
     @include flex;
     .intro{
-        text-align          : center;
+        text-align                  : center;
         img{
-            border-radius   : 50%;
-            display         : inline-block;
-            border          : 3px solid #ffffff;
+            border-radius           : 50%;
+            display                 : inline-block;
+            border                  : 3px solid #ffffff;
         }
         h1{
-            font-size       : toRem( 30px );
-            font-family     : $font_Two;
-            margin          : 20px 0 5px;
-            color           : $heading_Light;
+            font-size               : toRem( 30px );
+            font-family             : $font_Two;
+            margin                  : 20px 0 5px;
+            color                   : $heading_Light;
         }
         p{
-            font-size       : toRem( 16px ); 
-            color           : $text_Light;
-            line-height     : 22px;
-            font-weight     : 500;
+            font-size               : toRem( 16px ); 
+            color                   : $text_Light;
+            line-height             : 22px;
+            font-weight             : 500;
         }
         .social-links{
-            margin-top      : 25px;
+            margin-top              : 25px;
             a{
-                height      : 35px;
-                width       : 35px;
-                display     : inline-block;
-                text-align  : center;
-                line-height : 35px;
-                margin      : 0 4px;
-                color       : #ffffff;
-                border-radius: 50%;
-                transition  : all 0.3s ease;
+                height              : 35px;
+                width               : 35px;
+                display             : inline-block;
+                text-align          : center;
+                line-height         : 35px;
+                margin              : 0 4px;
+                color               : #ffffff;
+                border-radius       : 50%;
+                transition          : all 0.3s ease;
                 &:hover{
-                    transform: scale(1.1);
+                    transform       : scale(1.1);
                 }
             }
         }
     }
 }
+
+/* About Section */
+.about{
+    flex                                : 0 0 100%;
+    max-width                           : 100%;
+    .about-content .about-text{
+        flex                            : 0 0 100%;
+        max-width                       : 100%;
+        h3{
+            font-size                   : toRem( 24px );
+            margin-bottom               : 15px;
+            font-weight                 : 500;
+            color                       : $heading_Light;
+        }
+        p{
+            font-size                   : toRem( 16px );
+            line-height                 : 25px;
+            color                       : $text_Light;  
+            margin                      : 0;
+        }
+    }
+        
+    
+    .personal-info{
+        flex                            : 0 0 60%;
+        max-width                       : 60%;
+        margin-top                      : 40px; 
+        .info-item{
+            flex                        : 0 0 50%;
+            max-width                   : 50%;
+            margin-bottom               : 30px;
+            p{
+                padding                 : 3px 0;
+                font-weight             : 500;
+                color                   : $heading_Light;
+                margin                  : 0;
+            
+                &:nth-child(even){
+                    font-weight         : 100;
+                    color               : $text_Light; 
+                    border-bottom       : 1px solid #e8dfec;
+                }
+            }
+        }
+        .buttons{
+            margin-top                  : 10px;
+            .btn{
+                margin                  : 10px 15px 0 0;
+            }
+        }
+    }
+    .skills{
+    flex                                : 0 0 40%;
+    max-width                           : 40%;
+    margin-top                          : 40px;
+        .skill-item{
+            flex                        : 0 0 100%; 
+            max-width                   : 100%;
+            margin-bottom               : 20px;
+            h4{
+                line-height             : 40px;
+                font-size               : toRem( 16px );
+                color                   : $heading_Light;
+                font-weight             : 400;
+                margin                  : 0;
+            }
+            .progress{
+                background-color        :#e3e3e3;
+                height                  : 8px;
+                border-radius           : 4px;
+                width                   : 100%;
+                position                : relative;
+                .progress-in{
+                    position            : absolute;
+                    left                : 0;
+                    top                 : 0;
+                    height              : 100%;
+                    border-radius       : 4px;
+                }
+            }
+            .skill-percent{
+                line-height             : 40px;
+                position                : absolute;
+                right                   : 0;
+                top                     : -40px;
+
+            }
+        }
+    }        
+    .education, 
+    .experience{
+        h3.title{
+            font-size                    : toRem(20px);
+            font-weight                  : 500;
+            color                        : $heading_Light;
+            margin-bottom                : 30px;
+        }
+        .timeline-box{
+            flex                         : 0 0 100%;
+            max-width                    : 100%;
+            .timeline{
+                background-color         : $background_Light_Two;
+                padding                  : 30px 15px;
+                border                   : 1px solid $border_Light_One;
+                border-radius            : 10px;
+                width                    : 100%;
+                .timeline-item{
+                    position                 : relative;
+                    padding                  : 0 0 50px 20px;
+                    &:before{
+                        content              : '';
+                        width                : 1px;
+                        height               : 100%;
+                        left                 : 7px;
+                        top                  : 0;
+                        position             : absolute;
+                    }
+                    &:last-child{
+                        padding-bottom       : 0;
+                    }
+                    .circle-dot{
+                        position              : absolute;
+                        left                  : 0;
+                        top                   : 0;
+                        height                : 15px;
+                        width                 : 15px;
+                        border-radius         : 50%;
+                    }           
+                    .timeline-date{
+                        font-weight           : 400;
+                        font-size             : toRem( 12px );
+                        margin-bottom         : 12px;
+                        text-transform        : capitalize;
+                        color                 : $text_Light;
+                        svg{
+                            margin-right      : 5px;
+                        }
+                    }
+                    .timeline-title{
+                        font-weight           : 600;
+                        font-size             : toRem( 16px );
+                        margin-bottom         : 15px;
+                        text-transform        : capitalize;
+                        color                 : $heading_Light; 
+                    }
+                    .timeline-text{
+                        font-size             : toRem(16px);
+                        line-height           : 25px;
+                        color                 : $text_Light;
+                        margin                : 0;
+                    }
+                }
+            }
+        }
+    }
+    .education {
+        flex                             : 0 0 50%;
+        max-width                        : 50%;
+        margin-top                       : 30px;
+    }     
+    .experience{
+        flex                             : 0 0 50%;
+        max-width                        : 50%;
+        margin-top                       : 30px;
+    } 
+}
+
 
 
 @import 'mediaqueries';

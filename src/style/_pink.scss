@@ -8,11 +8,20 @@
     border-bottom           : 4px solid $pink;
 }
 
+.about .about-content .about-text h3 span,
 .aside .nav li a:hover, 
 .aside .nav li a.active{
         color               : $pink;
 }
 
+.education .timeline-box .timeline .timeline-item::before,
+.experience .timeline-box .timeline .timeline-item::before,
+.education .timeline-box .timeline .timeline-item .circle-dot,
+.experience .timeline-box .timeline .timeline-item .circle-dot,
+.about .skills .skill-item .progress .progress-in,
+.btn,
+.section-title h2::before,
+.section-title h2::after,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after, 
