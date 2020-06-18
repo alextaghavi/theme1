@@ -2,6 +2,10 @@
 @import 'variables';
 @import 'mixins';
 @import 'animations';
+@import 'blue';
+@import 'orange';
+@import 'yellow';
+@import 'green';
 @import 'pink';
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Poppins:200,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
@@ -44,6 +48,8 @@ html, body {
     transition              : all 0.3s ease;
     display                 : inline-block;
     white-space             : nowrap;
+    border                  : none;
+    cursor                  : pointer;
     &:hover{
         transform           : scale(1.05);
     }
@@ -56,56 +62,69 @@ html, body {
     padding                 : 0 15px;
 }
 
-.main-content{
-    padding-left            : 270px;
-    .section{
-        background-color        : $background_Light_One;
-        min-height              : 100vh;
-        display                 : block;
-        padding                 : 0 30px;
-        .container {
-            padding-top         : 60px;
-            padding-bottom      : 70px;
-            margin              : auto;
-            max-width           : 1100px;
-            width               : 100%;
-            .row{
-                @include flex;
-                flex-wrap       : wrap;
-                margin          : 0 -15px;
-                position        : relative;
-            }
-            .section-title{
-                flex            : 0 0 100%;
-                max-width       : 100%;
-                margin-bottom   : 60px;
-                h2{
-                    font-size   : toRem( 30px ); 
-                    font-family : $font_Two;
-                    font-weight : 700;
-                    color       : $heading_Light;
-                    margin      : 0;
-                    position    : relative;
-                    &:before{
-                        content : '';
-                        height  : 4px; 
-                        width   : 25px;
-                        position: absolute;
-                        top     : 100%;
-                        left    : 0;
-                        margin-top: 8px;
-                    }
-                    &:after{
-                        content : '';
-                        height  : 4px; 
-                        width   : 50px;
-                        position: absolute;
-                        top     : 100%;
-                        left    : 0;
-                    }
+.main-content .section{
+    background-color        : $background_Light_One;
+    min-height              : 100vh;
+    display                 : block;
+    padding                 : 0 30px;
+    position                : fixed;
+    left                    : 270px;
+    top                     : 0;
+    right                   : 0;
+    bottom                  : 0;
+    z-index                 : 0;
+    opacity                 : 1;
+    overflow-x              : hidden;
+    overflow-y              : auto;
+    &.back-section{
+        z-index             : 1;
+    }
+    &.active{
+        opacity             : 1;
+        z-index             : 2;
+        animation           : slideSection 1s ease;
+    }
+    .container {
+        padding-top         : 60px;
+        padding-bottom      : 70px;
+        margin              : auto;
+        max-width           : 1100px;
+        width               : 100%;
+        .row{
+            @include flex;
+            flex-wrap       : wrap;
+            margin          : 0 -15px;
+            position        : relative;
+        }
+        .section-title{
+            flex            : 0 0 100%;
+            max-width       : 100%;
+            margin-bottom   : 60px;
+            h2{
+                font-size   : toRem( 30px ); 
+                font-family : $font_Two;
+                font-weight : 700;
+                color       : $heading_Light;
+                margin      : 0;
+                position    : relative;
+                &:before{
+                    content : '';
+                    height  : 4px; 
+                    width   : 25px;
+                    position: absolute;
+                    top     : 100%;
+                    left    : 0;
+                    margin-top: 8px;
+                }
+                &:after{
+                    content : '';
+                    height  : 4px; 
+                    width   : 50px;
+                    position: absolute;
+                    top     : 100%;
+                    left    : 0;
                 }
             }
         }
     }
-    
 }

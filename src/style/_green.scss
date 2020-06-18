@@ -1,0 +1,41 @@
+.aside .logo a.green::before{
+    border-top              : 4px solid $green;
+    border-left             : 4px solid $green;
+}
+
+.aside .logo a.green::after{
+    border-right            : 4px solid $green;
+    border-bottom           : 4px solid $green;
+}
+
+.contact .contact-info-item .icon.green svg,
+.lightbox .lightbox-controls .prev-item.green .svg-inline--fa,
+.lightbox .lightbox-controls .next-item.green .svg-inline--fa,
+.portfolio .portfolio-item .portfolio-info.green .svg-inline--fa,
+.portfolio .container .portfolio-filter button.green.active,
+.service .service-item .service-item-inner .icon.green svg,
+.about .about-content .about-text h3 span.green,
+.aside .nav li a.green:hover, 
+.aside .nav li a.green.active{
+        color               : $green;
+}
+
+.service .service-item .service-item-inner:hover .icon.green,
+.education .timeline-box .timeline .timeline-item.green::before,
+.experience .timeline-box .timeline .timeline-item.green::before,
+.education .timeline-box .timeline .timeline-item .circle-dot.green,
+.experience .timeline-box .timeline .timeline-item .circle-dot.green,
+.about .skills .skill-item .progress .progress-in.green,
+.btn.green,
+.section-title h2.green::before,
+.section-title h2.green::after,
+.aside .nav-toggler span.green,
+.aside .nav-toggler span.green::before,
+.aside .nav-toggler span.green::after, 
+.home .intro .social-links a.green{
+    background-color        : $green;
+}
+
+.portfolio .container .portfolio-filter button.green.active{
+    border-color            : $green;
+}

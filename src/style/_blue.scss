@@ -1,0 +1,41 @@
+.aside .logo a.blue::before{
+    border-top              : 4px solid $blue;
+    border-left             : 4px solid $blue;
+}
+
+.aside .logo a.blue::after{
+    border-right            : 4px solid $blue;
+    border-bottom           : 4px solid $blue;
+}
+
+.contact .contact-info-item .icon.blue svg,
+.lightbox .lightbox-controls .prev-item.blue .svg-inline--fa,
+.lightbox .lightbox-controls .next-item.blue .svg-inline--fa,
+.portfolio .portfolio-item .portfolio-info.blue .svg-inline--fa,
+.portfolio .container .portfolio-filter button.blue.active,
+.service .service-item .service-item-inner .icon.blue svg,
+.about .about-content .about-text h3 span.blue,
+.aside .nav li a.blue:hover, 
+.aside .nav li a.blue.active{
+        color               : $blue;
+}
+
+.service .service-item .service-item-inner:hover .icon.blue,
+.education .timeline-box .timeline .timeline-item.blue::before,
+.experience .timeline-box .timeline .timeline-item.blue::before,
+.education .timeline-box .timeline .timeline-item .circle-dot.blue,
+.experience .timeline-box .timeline .timeline-item .circle-dot.blue,
+.about .skills .skill-item .progress .progress-in.blue,
+.btn.blue,
+.section-title h2.blue::before,
+.section-title h2.blue::after,
+.aside .nav-toggler span.blue,
+.aside .nav-toggler span.blue::before,
+.aside .nav-toggler span.blue::after, 
+.home .intro .social-links a.blue{
+    background-color        : $blue;
+}
+
+.portfolio .container .portfolio-filter button.blue.active{
+    border-color            : $blue;
+}

@@ -1,22 +1,77 @@
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 36em) { 
-
-}
-  
-// Medium devices (tablets, 768px and up)
-@media (min-width: 48em) { 
-
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 75em) {
+    .aside{
+        left: -270px;
+        transition: 0.3s all ease ;
+        .nav-toggler{
+            left: 30px;
+            top: 10px;
+            transition: 0.3s all ease ;
+            @include flex(row, center, center);
+            &.open{
+                left: 300px;
+            }
+        }
+        &.open{
+            left: 0px;
+            .nav-toggler.open span{
+                background-color: transparent;
+                &:before, &:after{
+                    transition: transform 0.3s ease, background-color 0.3s ease;
+                }
+                &:before{
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                &:after{
+                    transform: rotate(-45deg);
+                    top: 0;
+                }
+            } 
+        } 
+    }
+    .main-content .section {
+        transition: 0.3s all ease;
+        left: 0;
+        &.open{
+            left: 270px;
+        }
+    }
+    
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 62em) {
-
+@media (max-width: 62em) {
+    .portfolio .container .portfolio-item,
+    .service .container .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 75em) {
-    
+// Medium devices (tablets, 768px and up)
+@media (max-width: 48em) { 
+    .about .skills,
+    .about .personal-info, 
+    .about .education,
+    .about .experience, 
+    .service .container .service-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .portfolio .container .portfolio-filter button{
+        margin-bottom: 8px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 36em) { 
+    .portfolio .container .portfolio-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }

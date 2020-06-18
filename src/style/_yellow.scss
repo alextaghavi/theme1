@@ -1,0 +1,41 @@
+.aside .logo a.yellow::before{
+    border-top              : 4px solid $yellow;
+    border-left             : 4px solid $yellow;
+}
+
+.aside .logo a.yellow::after{
+    border-right            : 4px solid $yellow;
+    border-bottom           : 4px solid $yellow;
+}
+
+.contact .contact-info-item .icon.yellow svg,
+.lightbox .lightbox-controls .prev-item.yellow .svg-inline--fa,
+.lightbox .lightbox-controls .next-item.yellow .svg-inline--fa,
+.portfolio .portfolio-item .portfolio-info.yellow .svg-inline--fa,
+.portfolio .container .portfolio-filter button.yellow.active,
+.service .service-item .service-item-inner .icon.yellow svg,
+.about .about-content .about-text h3 span.yellow,
+.aside .nav li a.yellow:hover, 
+.aside .nav li a.yellow.active{
+        color               : $yellow;
+}
+
+.service .service-item .service-item-inner:hover .icon.yellow,
+.education .timeline-box .timeline .timeline-item.yellow::before,
+.experience .timeline-box .timeline .timeline-item.yellow::before,
+.education .timeline-box .timeline .timeline-item .circle-dot.yellow,
+.experience .timeline-box .timeline .timeline-item .circle-dot.yellow,
+.about .skills .skill-item .progress .progress-in.yellow,
+.btn.yellow,
+.section-title h2.yellow::before,
+.section-title h2.yellow::after,
+.aside .nav-toggler span.yellow,
+.aside .nav-toggler span.yellow::before,
+.aside .nav-toggler span.yellow::after, 
+.home .intro .social-links a.yellow{
+    background-color        : $yellow;
+}
+
+.portfolio .container .portfolio-filter button.yellow.active{
+    border-color            : $yellow;
+}

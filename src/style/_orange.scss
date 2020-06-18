@@ -1,0 +1,41 @@
+.aside .logo a.orange::before{
+    border-top              : 4px solid $orange;
+    border-left             : 4px solid $orange;
+}
+
+.aside .logo a.orange::after{
+    border-right            : 4px solid $orange;
+    border-bottom           : 4px solid $orange;
+}
+
+.contact .contact-info-item .icon.orange svg,
+.lightbox .lightbox-controls .prev-item.orange .svg-inline--fa,
+.lightbox .lightbox-controls .next-item.orange .svg-inline--fa,
+.portfolio .portfolio-item .portfolio-info.orange .svg-inline--fa,
+.portfolio .container .portfolio-filter button.orange.active,
+.service .service-item .service-item-inner .icon.orange svg,
+.about .about-content .about-text h3 span.orange,
+.aside .nav li a.orange:hover, 
+.aside .nav li a.orange.active{
+        color               : $orange;
+}
+
+.service .service-item .service-item-inner:hover .icon.orange,
+.education .timeline-box .timeline .timeline-item.orange::before,
+.experience .timeline-box .timeline .timeline-item.orange::before,
+.education .timeline-box .timeline .timeline-item .circle-dot.orange,
+.experience .timeline-box .timeline .timeline-item .circle-dot.orange,
+.about .skills .skill-item .progress .progress-in.orange,
+.btn.orange,
+.section-title h2.orange.orange::before,
+.section-title h2.orange.orange::after,
+.aside .nav-toggler span.orange,
+.aside .nav-toggler span.orange::before,
+.aside .nav-toggler span.orange::after, 
+.home .intro .social-links a.orange{
+    background-color        : $orange;
+}
+
+.portfolio .container .portfolio-filter button.orange.active{
+    border-color            : $orange;
+}

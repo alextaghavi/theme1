@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alex Taghavi</title>
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader End-->
     
     <!-- Main Container -->
     <div class="main-container">
@@ -15,27 +21,27 @@
         <div class="aside">
             <!-- Logo -->
             <div class="logo">
-                <a href="#">Alex Taghavi</a>
+                <a href="#" class="tempColor">Alex Taghavi</a>
             </div>
 
             <!-- Nav Toggler Btn -->
-            <div class="nav-toggler">
-                <span></span>
+            <div id="hamburger-menu" class="nav-toggler">
+                <span class="tempColor"></span>
             </div>
             <!-- Nav -->
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fas fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fas fa-list"></i>Service</a></li>
-                <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i>Blog</a></li>
-                <li><a href="#"><i class="fas fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active tempColor"><i class="fas fa-home"></i>Home</a></li>
+                <!-- <li><a href="#about" class="tempColor"><i class="fas fa-user tempColor"></i>About</a></li>
+                <li><a href="#services" class="tempColor"><i class="fas fa-list"></i>Service</a></li> -->
+                <li><a href="#portfolio" class="tempColor"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                <!-- <li><a href="#blog" class="tempColor"><i class="fas fa-envelope"></i>Blog</a></li>
+                <li><a href="#contact" class="tempColor"><i class="fas fa-comments"></i>Contact</a></li> -->
                 
             </ul>
 
             <!-- Copyright -->
             <div class="copyright-text">
-                &copy; 2020 Theme One
+                &copy; 2020 Alex Taghavi
             </div>
         </div>
         <!-- Aside End-->
@@ -44,17 +50,17 @@
         <div class="main-content">
 
             <!-- Home Section -->
-            <section class="home section hidden">
+            <section class="home section noAnimation active" id="home">
                 <div class="container">
                     <div class="intro">
                         <img src="./assets/profile.png" alt="profile picture" class="shadow-dark">
                         <h1>Alex Taghavi</h1>
                         <p>I'm a Web Developer</p>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-code"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#" class="tempColor"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="tempColor"><i class="fas fa-code"></i></a>
+                            <a href="#" class="tempColor"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="tempColor"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -62,18 +68,18 @@
             <!-- Home Section End -->
 
             <!-- About Section -->
-            <section class="about section">
+            <!-- <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>About me</h2>
+                            <h2 class="tempColor">About me</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>I'm Alex Taghavi, a <span>Web Developer</span></h3>
+                                    <h3>I'm Alex Taghavi, a <span class="tempColor">Web Developer</span></h3>
                                     <p>As a Developer I'm focused on design challenges and creating smart user interfaces. 
                                         I aim to bring about practical user enhancement through the latest technologies.</p>
                                 </div>
@@ -110,8 +116,8 @@
                             </div>
                             <div class="row">
                                 <div class="buttons padd-15">
-                                    <a href="#" class="btn">Download CV</a>
-                                    <a href="#" class="btn">Hire me</a>
+                                    <a href="#" class="btn tempColor">Download CV</a>
+                                    <a href="#" data-section-index="0" class="btn hire-me tempColor">Hire me</a>
                                 </div>
                             </div>
                         </div>
@@ -168,9 +174,9 @@
                             <div class="row">
                                 <div class="timeline-box padd-15">
                                     <div class="timeline shadow-dark">
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
+                                        
+                                        <div class="timeline-item tempColor">
+                                            <div class="circle-dot tempColor"></div>
                                             <h6 class="timeline-date">
                                                 <i class="far fa-calendar-alt"></i> 2000 - 2002
                                             </h6>
@@ -180,10 +186,9 @@
                                                 Inventore beatae eius dolore explicabo nisi vitae aliquid voluptatibus, facere dolor. 
                                             </p>
                                         </div>
-                                        <!-- Timeline Item End -->
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
+                                        
+                                        <div class="timeline-item tempColor">
+                                            <div class="circle-dot tempColor"></div>
                                             <h6 class="timeline-date">
                                                 <i class="far fa-calendar-alt"></i> 2000 - 2002
                                             </h6>
@@ -193,10 +198,9 @@
                                                 Inventore beatae eius dolore explicabo nisi vitae aliquid voluptatibus, facere dolor. 
                                             </p>
                                         </div>
-                                        <!-- Timeline Item End -->
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
+                                        
+                                        <div class="timeline-item tempColor">
+                                            <div class="circle-dot tempColor"></div>
                                             <h6 class="timeline-date">
                                                 <i class="far fa-calendar-alt"></i> 2000 - 2002
                                             </h6>
@@ -206,7 +210,7 @@
                                                 Inventore beatae eius dolore explicabo nisi vitae aliquid voluptatibus, facere dolor. 
                                             </p>
                                         </div>
-                                        <!-- Timeline Item End -->
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -216,9 +220,9 @@
                             <div class="row">
                                 <div class="timeline-box padd-15">
                                     <div class="timeline shadow-dark">
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
+                                        
+                                        <div class="timeline-item tempColor">
+                                            <div class="circle-dot tempColor"></div>
                                             <h6 class="timeline-date">
                                                 <i class="far fa-calendar-alt"></i> 2000 - 2002
                                             </h6>
@@ -228,10 +232,9 @@
                                                 Inventore beatae eius dolore explicabo nisi vitae aliquid voluptatibus, facere dolor. 
                                             </p>
                                         </div>
-                                        <!-- Timeline Item End -->
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
+                                        
+                                        <div class="timeline-item tempColor">
+                                            <div class="circle-dot tempColor"></div>
                                             <h6 class="timeline-date">
                                                 <i class="far fa-calendar-alt"></i> 2000 - 2002
                                             </h6>
@@ -241,10 +244,9 @@
                                                 Inventore beatae eius dolore explicabo nisi vitae aliquid voluptatibus, facere dolor. 
                                             </p>
                                         </div>
-                                        <!-- Timeline Item End -->
-                                        <!-- Timeline Item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
+                                        
+                                        <div class="timeline-item tempColor">
+                                            <div class="circle-dot tempColor"></div>
                                             <h6 class="timeline-date">
                                                 <i class="far fa-calendar-alt"></i> 2000 - 2002
                                             </h6>
@@ -254,23 +256,325 @@
                                                 Inventore beatae eius dolore explicabo nisi vitae aliquid voluptatibus, facere dolor. 
                                             </p>
                                         </div>
-                                        <!-- Timeline Item End -->
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-
+            </section> -->
             <!-- About Section End-->
+
+            <!-- Service Section -->
+            <!-- <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 class="tempColor">Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon tempColor">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam eum omnis rem beatae molestiae sint!</p>
+                            </div>
+                        </div>
+                        
+                            <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon tempColor">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <h4>Photography</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam eum omnis rem beatae molestiae sint!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon tempColor">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam eum omnis rem beatae molestiae sint!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon tempColor">
+                                    <i class="fas fa-film"></i>
+                                </div>
+                                <h4>Video Editing</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam eum omnis rem beatae molestiae sint!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon tempColor">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>Seo Optimization</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam eum omnis rem beatae molestiae sint!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon tempColor">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h4>Logo Design</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam eum omnis rem beatae molestiae sint!</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section> -->
+            <!-- Service Section End -->
+
+            <!-- Portfolio Section -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 class="tempColor">Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-filter">
+                            <button type="button" class="tempColor active" data-filter="all">All</button>
+                            <button type="button" class="tempColor" data-filter="web-design">Web Design</button>
+                            <button type="button" class="tempColor" data-filter="photography">Photography</button>
+                            <button type="button" class="tempColor" data-filter="wordpress">Wordpress</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15" data-category="web-design">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./assets/bg-effect.jpg" alt="portfolio">
+                                </div>
+                                <div class="portfolio-info tempColor">
+                                    <h4>Web Design</h4>
+                                    <div class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15" data-category="wordpress">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./assets/bg-effect1.jpg" alt="portfolio">
+                                </div>
+                                <div class="portfolio-info tempColor">
+                                    <h4>wordpress</h4>
+                                    <div class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15" data-category="web-design">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./assets/bg-effect2.jpg" alt="portfolio">
+                                </div>
+                                <div class="portfolio-info tempColor">
+                                    <h4>Web Design</h4>
+                                    <div class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15" data-category="photography">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./assets/bg-effect3.jpg" alt="portfolio">
+                                </div>
+                                <div class="portfolio-info tempColor">
+                                    <h4>Photography</h4>
+                                    <div class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15" data-category="wordpress">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./assets/bg-effect4.jpg" alt="portfolio">
+                                </div>
+                                <div class="portfolio-info tempColor">
+                                    <h4>Wordpress</h4>
+                                    <div class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15" data-category="web-design">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./assets/bg-effect5.jpg" alt="portfolio">
+                                </div>
+                                <div class="portfolio-info tempColor">
+                                    <h4>Web Design</h4>
+                                    <div class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio Section End-->
+
+            <!-- Blog Section -->
+            <!-- <section class="blog section" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 class="tempColor">Blog</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4>Coming soon</h4>
+                    </div>
+                </div>
+            </section> -->
+            <!-- Blog Section End-->
+
+            <!-- Contact Section -->
+            <!-- <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 class="tempColor">Contact me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="contact-info-item padd-15">
+                                <div class="icon tempColor">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                </div>
+                            <a href="mailto:contact@alextaghavi.com"><h4>Email</h4></a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+                        <form action="" class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class='form-control' placeholder="Name*">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class='form-control' placeholder="Email*">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class='form-control' placeholder="Subject*">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea id="textarea" class='form-control' placeholder="Message*"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 padd-15">
+                                    <button type="submit" class="btn tempColor">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    
+                </div>
+            </section> -->
+            <!-- Contact Section End -->
 
         </div>
         <!-- Main Content End-->
 
     </div>
     <!-- Main Container End-->
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times;</div>
+            <img src="./assets/bg-effect.jpg" alt="portfolio" class="lightbox-img next-item">
+            <div class="lightbox-caption">
+                <div class="caption-text"></div>
+                <div class="caption-counter"></div>
+            </div>
+        </div>
+        <div class="lightbox-controls">
+            <div class="prev-item tempColor"><i class="fas fa-angle-left tempColor"></i></div>
+            <div class="next-item tempColor"><i class="fas fa-angle-right tempColor"></i></div>
+        </div>
+    </div>
+    <!-- Lightbox End -->
+
+    <!--Color switcher-->
+    <div class="style-switcher">
+        <div class="toggle-style-switcher">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul class="colors">
+            <li><button data-color="pink"></button></li>
+            <li><button data-color="blue"></button></li>
+            <li><button data-color="orange"></button></li>
+            <li><button data-color="yellow"></button></li>
+            <li><button data-color="green"></button></li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            Light
+        </label>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+            Dark
+        </label>
+    </div>
+
+    <!--Color switcher end-->
 
 </body>
 </html>
